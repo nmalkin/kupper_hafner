@@ -20,10 +20,16 @@ One assumption of these statistics, however, is that items are assigned to only 
 
 The paper by Hupper and Hafner provides a statistic that allows the calculation of inter-rater agreement in these situations as well.
 
+Installation
+------------
+This code implements Kupper-Hafner agreement in Python. It was written and tested in Python 3.
+You can install it using pip:
 
-How to use this code
---------------------
+    pip install git+https://github.com/nmalkin/kupper_hafner.git
 
+
+Usage
+-----
 Let's say we have three items, and two raters (A and B) assigned them the following categories:
 
 - Item 0: A rated it 10; B rated it 10, 20
@@ -44,3 +50,4 @@ If the codebook included categories that were not used by either rater, it can b
 ```python
 codebook = [10, 20, 30, 40, 50]
 kupper_hafner(A_ratings, B_ratings, codebook)
+```
