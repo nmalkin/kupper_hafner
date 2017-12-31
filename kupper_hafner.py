@@ -1,5 +1,6 @@
 import unittest
 
+
 def observed_proportion_of_concordance(A_codes, B_codes):
     # Let the variables a_i, and b_i, denote the numbers of attributes for the i-th unit chosen by raters A and B, respectively
     a_i = len(A_codes)
@@ -23,7 +24,8 @@ class ConcordanceProportionTest(unittest.TestCase):
         # and rater B chooses B_i={P, R} to describe the i-th unit.
         B_codes = ['P', 'R']
         # Thus, the two raters agree on one attribute and pi_hat_i=1/2.
-        self.assertEqual(0.5, observed_proportion_of_concordance(A_codes, B_codes))
+        self.assertEqual(
+            0.5, observed_proportion_of_concordance(A_codes, B_codes))
 
 
 def kupper_hafner(data1, data2, codebook=None):
@@ -31,7 +33,6 @@ def kupper_hafner(data1, data2, codebook=None):
     if len(data1) != len(data2):
         raise Exception('The size of the datasets is different.')
     n = len(data1)
-
 
     # Following examination of the ith unit, each rater must decide which subset, from a prespecified set of k>=2 nominal attributes, best describes the i-th unit.
     # k = len(codebook), but we will compute it later, when we know the codebook has been populated.
