@@ -1,14 +1,14 @@
 Kupper-Hafner inter-rater agreement calculation
 ================================================
 
-This repository contains code to calculate inter-rater agreement for multiple attribute responses, as described by Lawrence L. Kupper and Kerry B. Hafner in their article:
+This repository contains code to calculate inter-rater agreement for multiple attribute responses, as described by Lawrence L. Kupper and Kerry B. Hafner in [their article](https://dx.doi.org/10.2307/2531695):
 
     On Assessing Interrater Agreement for Multiple Attribute Responses 
     ------------------------------------------------------------------
     Authors: Lawrence L. Kupper and Kerry B. Hafner
     Source: Biometrics, Vol. 45, No. 3 (Sep., 1989), pp. 957-967
     Published by: International Biometric Society
-    Stable URL: http://www.jstor.org/stable/2531695
+    Stable URL: https://www.jstor.org/stable/2531695
 
 
 Why Kupper-Hafner agreement?
