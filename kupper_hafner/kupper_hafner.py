@@ -37,13 +37,13 @@ def kupper_hafner(data1, data2, codebook=None):
     # Following examination of the ith unit, each rater must decide which subset, from a prespecified set of k>=2 nominal attributes, best describes the i-th unit.
     # k = len(codebook), but we will compute it later, when we know the codebook has been populated.
 
-    pi_hat = []
+    pi_hats = []
     min_codes = []
     observed_codebook = set()
     for A_codes, B_codes in zip(data1, data2):
         # Find the observed proportion of concordance
         pi_hat_i = observed_proportion_of_concordance(A_codes, B_codes)
-        pi_hat.append(pi_hat_i)
+        pi_hats.append(pi_hat_i)
 
         # Also store the minimum number of codes, in order to compute the chance correction (explained below)
         min_codes.append(min(len(A_codes), len(B_codes)))
@@ -58,7 +58,7 @@ def kupper_hafner(data1, data2, codebook=None):
     k = len(codebook)
 
     # The overall observed concordance between raters A and B can be computed as the average of the pi_hat_i's
-    pi_hat = sum(pi_hat) / len(pi_hat)
+    pi_hat = sum(pi_hats) / len(pi_hats)
 
     # However, since some of this observed agreement will be due purely to chance, the quantity should be adjusted in an appropriate manner
     # […]
