@@ -1,4 +1,6 @@
-import unittest
+"""
+Kupper-Hafner inter-rater agreement calculation library
+"""
 
 
 def observed_proportion_of_concordance(A_codes, B_codes):
@@ -13,19 +15,6 @@ def observed_proportion_of_concordance(A_codes, B_codes):
     pi_hat_i = x_i / max(a_i, b_i)
 
     return pi_hat_i
-
-
-class ConcordanceProportionTest(unittest.TestCase):
-    def test_concordance(self):
-        # As a simple example, let K={P, Q, R, S} so that Card(K)=4.
-        k = 4
-        # Suppose that rater A chooses A_i={P}
-        A_codes = ['P']
-        # and rater B chooses B_i={P, R} to describe the i-th unit.
-        B_codes = ['P', 'R']
-        # Thus, the two raters agree on one attribute and pi_hat_i=1/2.
-        self.assertEqual(
-            0.5, observed_proportion_of_concordance(A_codes, B_codes))
 
 
 def kupper_hafner(data1, data2, codebook=None):
