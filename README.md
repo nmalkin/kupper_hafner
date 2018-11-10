@@ -14,11 +14,11 @@ This repository contains code to calculate inter-rater agreement for multiple at
 Why Kupper-Hafner agreement?
 ----------------------------
 A common technique in scientific studies is for two or more raters to independently assign attributes to each item in a dataset (such as a response or specimen).
-Inter-rater agreement, or [inter-rater reliability](https://en.wikipedia.org/wiki/Inter-rater_reliability), is used to measure the degree to which these raters end up agreeing with each other. Commonly used statistics for this include Cohen's kappa and Fleiss' kappa.
+Inter-rater agreement, or [inter-rater reliability](https://en.wikipedia.org/wiki/Inter-rater_reliability), is used to measure the degree to which these raters end up agreeing with each other. Commonly used statistics for this include [Cohen's kappa](https://en.wikipedia.org/wiki/Cohen%27s_kappa) and [Fleiss' kappa](https://en.wikipedia.org/wiki/Fleiss'_kappa).
 
 One assumption of these statistics, however, is that items are assigned to only one of several mutually exclusive categories. But, in certain coding situations, we want to be able to assign multiple codes to the same item. If we do that, the assumptions in the kappa statistics no longer hold.
 
-The paper by Hupper and Hafner provides a statistic that allows the calculation of inter-rater agreement in these situations as well.
+The paper by Kupper and Hafner provides a statistic that allows the calculation of inter-rater agreement in these situations as well.
 
 Installation
 ------------
