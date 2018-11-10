@@ -6,7 +6,7 @@ setup(
     url='http://github.com/nmalkin/kupper_hafner',
     author='nmalkin',
     license='BSD',
-    python_requires='>=3.6',
+    python_requires='>=2.7',
     packages=find_packages(),
     install_requires=[]
 )

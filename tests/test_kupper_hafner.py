@@ -1,4 +1,6 @@
+from __future__ import division
 import unittest
+
 
 from kupper_hafner import *
 

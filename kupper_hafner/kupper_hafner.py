@@ -2,6 +2,8 @@
 Kupper-Hafner inter-rater agreement calculation library
 """
 
+from __future__ import division
+
 
 def observed_proportion_of_concordance(A_codes, B_codes):
     # Let the variables a_i, and b_i, denote the numbers of attributes for the i-th unit chosen by raters A and B, respectively
@@ -50,7 +52,7 @@ def kupper_hafner(data1, data2, codebook=None):
     pi_hat = sum(pi_hats) / len(pi_hats)
 
     # However, since some of this observed agreement will be due purely to chance, the quantity should be adjusted in an appropriate manner
-    # […]
+    # [...]
     # pi_0 = Sum_i{min(a_i, b_i)} / (nk)
     pi_0 = sum(min_codes) / (n * k)
 

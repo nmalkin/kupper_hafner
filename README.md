@@ -22,7 +22,7 @@ The paper by Kupper and Hafner provides a statistic that allows the calculation 
 
 Installation
 ------------
-This code implements Kupper-Hafner agreement in Python. It was written and tested in Python 3.
+This code implements Kupper-Hafner agreement in Python. It should support both Python 2 and 3.
 You can install it using pip:
 
     pip install git+https://github.com/nmalkin/kupper_hafner.git
