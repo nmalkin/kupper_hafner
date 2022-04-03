@@ -25,8 +25,7 @@ Installation
 This code implements Kupper-Hafner agreement in Python. It should support both Python 2 and 3.
 You can install it using pip:
 
-    pip install git+https://github.com/nmalkin/kupper_hafner.git
-
+    pip install kupper-hafner
 
 Usage
 -----
